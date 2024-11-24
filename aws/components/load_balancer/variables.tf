@@ -1,9 +1,9 @@
 variable "environment" {
-  default = "production"
   type    = string
+  default = "production"
 }
 
 variable "subnet_ids" {
-  description = "IDs of the subnets"
   type        = set(string)
+  description = "IDs of the subnets"
 }
