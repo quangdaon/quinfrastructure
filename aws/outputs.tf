@@ -13,6 +13,16 @@ output "alb_arn" {
   value       = module.load_balancer.arn
 }
 
+output "alb_zone_id" {
+  description = "Zone ID of the load balancer"
+  value       = module.load_balancer.zone_id
+}
+
+output "alb_dns_name" {
+  description = "DNS name of the load balancer"
+  value       = module.load_balancer.dns_name
+}
+
 output "alb_security_group" {
   description = "ID of the ALB security group"
   value       = module.load_balancer.security_group
