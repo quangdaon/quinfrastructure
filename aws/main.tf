@@ -28,6 +28,7 @@ module "network" {
 module "load_balancer" {
   source = "./components/load_balancer"
 
-  environment = var.environment
-  subnet_ids  = module.network.subnets
+  environment      = var.environment
+  subnet_ids       = module.network.subnets
+  default_cert_arn = var.alb_default_cert_arn
 }

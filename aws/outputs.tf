@@ -27,3 +27,13 @@ output "alb_security_group" {
   description = "ID of the ALB security group"
   value       = module.load_balancer.security_group
 }
+
+output "alb_http_listener_arn" {
+  description = "ARN of the HTTP listener"
+  value       = module.load_balancer.http_listener_arn
+}
+
+output "alb_https_listener_arn" {
+  description = "ARN of the HTTPS listener"
+  value       = module.load_balancer.https_listener_arn
+}
